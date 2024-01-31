@@ -6,13 +6,8 @@ const pairProduct = (numbers, targetProduct) => {
     const isInt = Number.isInteger(multiplier);
     if (isInt) {
       // We're looking for the multiplier in the rest of the array
-      
       const secondIdx = numbers.slice(i + 1).indexOf(multiplier)
-      console.log(secondIdx)
-      
-      if (secondIdx !== -1) {
-        return [i, numbers.indexOf(multiplier)]
-      }
+      if (secondIdx !== -1) return [i, numbers.indexOf(multiplier)]
     }
   }
 };
