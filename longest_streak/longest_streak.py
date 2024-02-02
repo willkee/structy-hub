@@ -5,7 +5,6 @@
 ​
 def longest_streak(head):
   if not head or not head.val: return 0
-  if head.next == None: return 1
 ​
   map = {}
   prev = head
