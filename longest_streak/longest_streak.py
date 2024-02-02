@@ -13,11 +13,8 @@ def longest_streak(head):
   map[head.val] = 1
   
   while current is not None:
-    if current.val in map:
-      if prev.val == current.val:
+    if current.val in map and prev.val == current.val:
         map[current.val] += 1
-      else:
-        map[current.val] = 1
     else:
         map[current.val] = 1
     
