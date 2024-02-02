@@ -6,10 +6,8 @@
 def remove_node(head, target_val):
   if not head: return None
   if head.val == target_val: 
-    if head.next == None:
-      return None
-    else:
-      head = head.next
+    if head.next == None: return None
+    else: head = head.next
   
   prev = head
   current = head.next
